@@ -63,8 +63,9 @@ Write a Python code that takes a JSON string as an input, transforms it into ano
  -  Install python. Project developed with python 3.8.
  -  Install python requirements.
      
-    
+    ````
     pip install -r requirements.txt
+    ````
     
  -  Run database! Set own Database credentials to variables.env file 
     or you can use prepared docker-compose file and default credentials.
@@ -74,19 +75,23 @@ Write a Python code that takes a JSON string as an input, transforms it into ano
     ___
     Install docker-compose instructions: https://docs.docker.com/compose/install/
     ___
-    Docker-compose running command:
+    Docker-compose running command: 
+    ````
+    docker-compose up -d
+    ````
     ___
     
-    
-    docker-compose up -d
- 
  -  Application works with input files. 
     One object or objects list can be inside.
     Examples:
  
- 
+    ````
     python app.py --file input.json
+    or
     python app.py --file input_list.json
+    ````
+    
+    
 
 
 ## Project structure
